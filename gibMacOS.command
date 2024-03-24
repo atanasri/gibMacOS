@@ -5,7 +5,7 @@
 args=( "$@" )
 dir="$(cd -- "$(dirname "$0")" >/dev/null 2>&1; pwd -P)"
 script="${0##*/}"
-target="${script%.*}.py"
+target="${script%/*}.py"
 
 # use_py3:
 #   TRUE  = Use if found, use py2 otherwise
